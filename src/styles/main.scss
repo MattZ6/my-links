@@ -1,0 +1,17 @@
+@import "base";
+@import "profile";
+@import "social-links";
+@import "links";
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: $space-large;
+
+  width: 100%;
+  max-width: $screen-small;
+
+  margin: 0 auto;
+  padding: $space-x-large $space-medium;
+}

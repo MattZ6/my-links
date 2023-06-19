@@ -1,0 +1,44 @@
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: $space-small;
+
+  max-width: 460px;
+  width: 100%;
+
+  > a {
+    @include with-common-interaction;
+
+    flex: 1;
+    display: flex;
+    align-items: center;
+
+    background-color: $color-element-background;
+    padding: $space-small $space-normal;
+
+    min-height: 56px;
+    border-radius: $radii-small;
+
+    > div {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+
+      > strong {
+        font-size: $font-size-body;
+        line-height: $line-height-body;
+      }
+
+      > span {
+        font-size: $font-size-body;
+        line-height: $line-height-body;
+        color: $color-muted;
+      }
+    }
+
+    > i {
+      color: $color-muted;
+      font-size: $font-size-body;
+    }
+  }
+}
